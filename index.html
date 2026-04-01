@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv Suthar | CS Portfolio</title>
+  <meta name="description" content="Portfolio of Dhruv Suthar — CS student building AI products and full-stack systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== HERO SCREEN ===================== -->
+  <section class="hero-screen" id="top">
+
+    <!-- NAV -->
+    <nav class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand-icon">&lt;/&gt;</span>
+        <span class="brand-name">Dhruv Suthar</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <div class="nav-links" id="site-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Retro perspective grid -->
+    <div class="retro-grid" aria-hidden="true"></div>
+
+    <!-- Ambient glow behind name -->
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <!-- Centered hero content -->
+    <div class="hero-center">
+      <p class="hero-eyebrow">Mumbai, India &nbsp;·&nbsp; B.Sc. Computer Science &nbsp;·&nbsp; 2026</p>
+
+      <h1 class="hero-name">
+        <span class="name-line">Dhruv</span>
+        <span class="name-line gradient-text">Suthar</span>
+      </h1>
+
+      <p class="hero-role">
+        <span class="type-text" id="typeTarget"></span><span class="type-cursor">|</span>
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">View Projects</a>
+        <a class="button button-secondary" href="Dhruv_resume.docx" download>Download Résumé</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+      <span class="scroll-label">EXPLORE</span>
+      <span class="scroll-chevron">▼</span>
+    </a>
+
+  </section>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <div class="page-shell">
+    <main>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="section-kicker">// about</p>
+          <h2>Building at the intersection of AI, software, and real-world utility.</h2>
+        </div>
+        <div class="about-panels">
+          <article class="panel">
+            <p>
+              My work centers on AI-powered platforms for cyber safety, legal intelligence, and educational simulation. I like projects that need more than just code — especially when they involve product thinking, experimentation, and system design.
+            </p>
+            <p>
+              I move fast, learn faster, and care about building things people can actually use. Currently open to internships and collaborations where I can contribute meaningfully.
+            </p>
+          </article>
+          <article class="panel stats-panel">
+            <div class="stat-item">
+              <span class="stat-value">MERN</span>
+              <span class="stat-label">Primary stack</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">AI</span>
+              <span class="stat-label">Product focus</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Build</span>
+              <span class="stat-label">Fast executor</span>
+            </div>
+          </article>
+          <aside class="panel profile-card">
+            <p class="card-label">// profile</p>
+            <div class="profile-rows">
+              <div class="profile-row">
+                <span class="pr-label">Focus</span>
+                <strong>AI + Full-Stack Dev</strong>
+              </div>
+              <div class="profile-row">
+                <span class="pr-label">Internship</span>
+                <strong>Product Dev @ NStechX India Private Limited</strong>
+              </div>
+              <div class="profile-row">
+                <span class="pr-label">Open For</span>
+                <strong class="accent-text">Internships &amp; Collabs</strong>
+              </div>
+            </div>
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Available for opportunities</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <p class="section-kicker">// experience</p>
+          <h2>Hands-on AI product development experience.</h2>
+        </div>
+        <article class="feature-panel">
+          <span class="exp-badge">Internship</span>
+          <div class="timeline-head">
+            <div>
+              <h3>Product Development Intern</h3>
+              <p class="exp-company">NStechX India Private Limited</p>
+            </div>
+            <span class="date-badge">Nov 2025 – Feb 2026</span>
+          </div>
+          <p class="experience-intro">
+            Worked on a pre-launch AI-based transaction reconciliation and analysis platform, contributing across research, feature development, backend workflows, and system validation.
+          </p>
+          <ul class="detail-list">
+            <li>Implemented and evaluated AI-driven reconciliation analysis modules.</li>
+            <li>Contributed to requirement analysis, research, and product development for a pre-launch prototype.</li>
+            <li>Supported backend services, testing, debugging, and data processing workflows.</li>
+            <li>Collaborated with product and engineering teams to improve system accuracy and performance.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-kicker">// projects</p>
+          <h2>Selected work across AI safety, legal tech, and automation.</h2>
+        </div>
+        <div class="cards">
+
+          <article class="card project-card" data-accent="teal">
+            <div class="card-accent-line"></div>
+            <div class="card-topline">
+              <h3>TYPEAWARE</h3>
+              <span class="date-chip">Oct 2025</span>
+            </div>
+            <p class="project-subtitle">Real-Time AI Cyber Safety Platform</p>
+            <p>Real-time AI moderation detecting cyberbullying, abusive language, slang-based toxicity, and intentionally obfuscated harmful messages.</p>
+            <ul class="detail-list compact-list">
+              <li>Toxicity scoring and pattern-break detection.</li>
+              <li>Admin dashboard for moderation and reporting.</li>
+              <li>Prepared for demos, competitions, and live showcases.</li>
+            </ul>
+            <div class="stack-chips">
+              <span>FastAPI</span><span>React</span><span>OpenRouter AI</span><span>Tailwind</span><span>Vercel</span>
+            </div>
+          </article>
+
+          <article class="card project-card" data-accent="purple">
+            <div class="card-accent-line"></div>
+            <div class="card-topline">
+              <h3>LEGALYZE</h3>
+              <span class="date-chip">Mar 2026</span>
+            </div>
+            <p class="project-subtitle">AI-Powered Contract Intelligence</p>
+            <p>Contract intelligence platform using NLP and RAG for clause extraction, risk scoring, legal simplification, and AI-assisted contract generation.</p>
+            <ul class="detail-list compact-list">
+              <li>Low, medium, and high risk scoring for clauses.</li>
+              <li>Fair alternatives generated for risky or biased terms.</li>
+              <li>Digital signature verification for document authenticity.</li>
+            </ul>
+            <div class="stack-chips">
+              <span>React</span><span>MongoDB</span><span>Hugging Face</span><span>Tailwind</span>
+            </div>
+          </article>
+
+          <article class="card project-card" data-accent="blue">
+            <div class="card-accent-line"></div>
+            <div class="card-topline">
+              <h3>JURIX</h3>
+              <span class="date-chip">Oct 2025</span>
+            </div>
+            <p class="project-subtitle">AI Courtroom Simulation System</p>
+            <p>Educational courtroom simulation with AI agents for prosecution, defense, and judicial reasoning, supported by OCR and NLP-driven document understanding.</p>
+            <ul class="detail-list compact-list">
+              <li>Multi-agent behavior for courtroom roles.</li>
+              <li>OCR and NLP for parsing and summarizing legal documents.</li>
+              <li>AI-assisted legal argument generation and decision flow.</li>
+            </ul>
+            <div class="stack-chips">
+              <span>NLP</span><span>OCR</span><span>AI Agents</span><span>Python</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section" id="education">
+        <div class="section-heading">
+          <p class="section-kicker">// education</p>
+          <h2>Academic foundation rooted in computer science.</h2>
+        </div>
+        <div class="education-list">
+          <article class="card compact-card edu-featured">
+            <div class="edu-icon">🎓</div>
+            <h3>Shree L. R. Tiwari Degree College</h3>
+            <p class="edu-meta">Mumbai, Mira Road · 2023 – 2026</p>
+            <p>Bachelor of Science in Computer Science</p>
+            <span class="cgpa-badge">CGPA 7.8 / 10</span>
+          </article>
+          <article class="card compact-card">
+            <div class="edu-icon">🏫</div>
+            <h3>Mother Mary Junior College</h3>
+            <p class="edu-meta">Mumbai, Bhayander · 2021 – 2023</p>
+            <p>Higher Secondary Education (Science)</p>
+          </article>
+          <article class="card compact-card">
+            <div class="edu-icon">📚</div>
+            <h3>Gurukul English High School</h3>
+            <p class="edu-meta">Mumbai, Bhayander · 2009 – 2021</p>
+            <p>Schooling</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS & CERTS -->
+      <section class="section dual-section" id="skills">
+        <div class="card">
+          <p class="section-kicker">// skills</p>
+          <h2>Technical toolkit</h2>
+          <div class="chip-group">
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Express</span>
+            <span>FastAPI</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Vercel</span>
+            <span>Render</span>
+            <span>Postman</span>
+          </div>
+          <p class="language-line"><strong>Languages:</strong> English, Hindi</p>
+        </div>
+        <div class="card">
+          <p class="section-kicker">// certifications &amp; leadership</p>
+          <h2>Learning beyond coursework</h2>
+          <ul class="cert-list">
+            <li><span class="cert-dot"></span><div><strong>Python Programming</strong><span>GeeksforGeeks · Online</span></div></li>
+            <li><span class="cert-dot"></span><div><strong>Full Stack Development</strong><span>QUASTECH · Offline</span></div></li>
+            <li><span class="cert-dot"></span><div><strong>CS Department Representative</strong><span>CARPDIEM 2026 · All Area Access</span></div></li>
+            <li><span class="cert-dot"></span><div><strong>Core Committee Member</strong><span>TECHNOVA 2k25</span></div></li>
+            <li><span class="cert-dot"></span><div><strong>Technical Team Member</strong><span>Youth Festival 2024</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ACTIVITIES -->
+      <section class="section" id="activities">
+        <div class="section-heading">
+          <p class="section-kicker">// activities</p>
+          <h2>Leadership and event experience.</h2>
+        </div>
+        <div class="cards">
+          <article class="card compact-card">
+            <div class="activity-num">01</div>
+            <h3>CARPDIEM 2026</h3>
+            <p class="activity-role">All Area Access · CS Department Representative</p>
+            <p>Contributed across multiple areas and helped the department win the <strong>Best PR Trophy</strong>.</p>
+          </article>
+          <article class="card compact-card">
+            <div class="activity-num">02</div>
+            <h3>TECHNOVA 2k25</h3>
+            <p class="activity-role">Core Committee Member</p>
+            <p>Coordinated 5+ technical events, managed logistics, and led execution as Event Head.</p>
+          </article>
+          <article class="card compact-card">
+            <div class="activity-num">03</div>
+            <h3>Youth Festival 2024</h3>
+            <p class="activity-role">Technical Team Member</p>
+            <p>Handled sound systems, stage setup, event operations, and technical coordination.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="contact-panel">
+          <p class="section-kicker">// contact</p>
+          <h2>Let's build something meaningful together.</h2>
+          <p>Open to internships, collaborations, and opportunities to contribute to strong teams, learn quickly, and build thoughtful AI or web products.</p>
+          <div class="contact-email">
+            <span class="email-label">reach me at</span>
+            <a href="mailto:dhruvrsuthar1978@gmail.com">dhruvrsuthar1978@gmail.com</a>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:dhruvrsuthar1978@gmail.com?subject=Portfolio%20Contact">Send Email</a>
+            <a class="button button-secondary" href="#top">Back to Top</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- end .page-shell -->
+
+  <script src="script.js"></script>
+</body>
+</html>
