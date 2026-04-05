@@ -3,326 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhruv Suthar | CS Portfolio</title>
-  <meta name="description" content="Portfolio of Dhruv Suthar — CS student building AI products and full-stack systems.">
+  <title>Dhruv Suthar | AI Developer</title>
+  <meta name="description" content="Dhruv Suthar - AI developer and full-stack builder based in Mumbai. Building practical systems with intelligence, clarity, and real-world utility.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===================== HERO SCREEN ===================== -->
-  <section class="hero-screen" id="top">
+  <div class="mob-bar" id="mob-bar">
+    <span class="mob-logo">DS</span>
+    <button class="mob-toggle" id="mob-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
 
-    <!-- NAV -->
-    <nav class="topbar">
-      <a class="brand" href="#top">
-        <span class="brand-icon">&lt;/&gt;</span>
-        <span class="brand-name">Dhruv Suthar</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <div class="nav-links" id="site-nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <div class="layout">
 
-    <!-- Retro perspective grid -->
-    <div class="retro-grid" aria-hidden="true"></div>
-
-    <!-- Ambient glow behind name -->
-    <div class="hero-glow" aria-hidden="true"></div>
-
-    <!-- Centered hero content -->
-    <div class="hero-center">
-      <p class="hero-eyebrow">Mumbai, India &nbsp;·&nbsp; B.Sc. Computer Science &nbsp;·&nbsp; 2026</p>
-
-      <h1 class="hero-name">
-        <span class="name-line">Dhruv</span>
-        <span class="name-line gradient-text">Suthar</span>
-      </h1>
-
-      <p class="hero-role">
-        <span class="type-text" id="typeTarget"></span><span class="type-cursor">|</span>
-      </p>
-
-      <div class="hero-actions">
-        <a class="button button-primary" href="#projects">View Projects</a>
-        <a class="button button-secondary" href="DHRUVResume.pdf.docx" download="DHRUVResume.docx">Download Resume</a>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <a class="scroll-hint" href="#about" aria-label="Scroll to About">
-      <span class="scroll-label">EXPLORE</span>
-      <span class="scroll-chevron">▼</span>
-    </a>
-
-  </section>
-
-  <!-- ===================== MAIN CONTENT ===================== -->
-  <div class="page-shell">
-    <main>
-
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="section-heading">
-          <p class="section-kicker">// about</p>
-          <h2>Building at the intersection of AI, software, and real-world utility.</h2>
-        </div>
-        <div class="about-panels">
-          <article class="panel">
-            <p>
-              My work centers on AI-powered platforms for cyber safety, legal intelligence, and educational simulation. I like projects that need more than just code — especially when they involve product thinking, experimentation, and system design.
-            </p>
-            <p>
-              I move fast, learn faster, and care about building things people can actually use. Currently open to internships and collaborations where I can contribute meaningfully.
-            </p>
-          </article>
-          <article class="panel stats-panel">
-            <div class="stat-item">
-              <span class="stat-value">MERN</span>
-              <span class="stat-label">Primary stack</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-value">AI</span>
-              <span class="stat-label">Product focus</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-value">Build</span>
-              <span class="stat-label">Fast executor</span>
-            </div>
-          </article>
-          <aside class="panel profile-card">
-            <p class="card-label">// profile</p>
-            <div class="profile-rows">
-              <div class="profile-row">
-                <span class="pr-label">Focus</span>
-                <strong>AI + Full-Stack Dev</strong>
-              </div>
-              <div class="profile-row">
-                <span class="pr-label">Internship</span>
-                <strong>Product Dev @ NStechX India Private Limited</strong>
-              </div>
-              <div class="profile-row">
-                <span class="pr-label">Open For</span>
-                <strong class="accent-text">Internships &amp; Collabs</strong>
-              </div>
-            </div>
-            <div class="status-badge">
-              <span class="status-dot"></span>
-              <span>Available for opportunities</span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE -->
-      <section class="section" id="experience">
-        <div class="section-heading">
-          <p class="section-kicker">// experience</p>
-          <h2>Hands-on AI product development experience.</h2>
-        </div>
-        <article class="feature-panel">
-          <span class="exp-badge">Internship</span>
-          <div class="timeline-head">
-            <div>
-              <h3>Product Development Intern</h3>
-              <p class="exp-company">NStechX India Private Limited</p>
-            </div>
-            <span class="date-badge">Nov 2025 – Feb 2026</span>
+    <aside class="sidebar" id="sidebar">
+      <div class="sb-top">
+        <div class="sb-id">
+          <div class="avatar">DS</div>
+          <div class="sb-name-block">
+            <h1 class="sb-name">Dhruv Suthar</h1>
+            <p class="sb-title">AI Developer</p>
           </div>
-          <p class="experience-intro">
-            Worked on a pre-launch AI-based transaction reconciliation and analysis platform, contributing across research, feature development, backend workflows, and system validation.
+        </div>
+
+        <p class="sb-bio">
+          Building AI products and full-stack systems with real-world utility.
+          Based in Mumbai, India.
+        </p>
+
+        <nav class="sb-nav" id="sb-nav">
+          <a href="#about" class="nav-item is-active" data-section="about">
+            <span class="nav-dot"></span>About
+          </a>
+          <a href="#experience" class="nav-item" data-section="experience">
+            <span class="nav-dot"></span>Experience
+          </a>
+          <a href="#projects" class="nav-item" data-section="projects">
+            <span class="nav-dot"></span>Projects
+          </a>
+          <a href="#skills" class="nav-item" data-section="skills">
+            <span class="nav-dot"></span>Skills
+          </a>
+          <a href="#contact" class="nav-item" data-section="contact">
+            <span class="nav-dot"></span>Contact
+          </a>
+        </nav>
+      </div>
+
+      <div class="sb-bottom">
+        <div class="sb-avail">
+          <span class="pulse"></span>
+          Open to internships and full-time roles
+        </div>
+        <div class="sb-links">
+          <a href="https://github.com/dhruvrsuthar1978" target="_blank" rel="noopener" class="sb-link" aria-label="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/dhruv-suthar-29912b345" target="_blank" rel="noopener" class="sb-link" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+          </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener" class="sb-link" aria-label="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="DHRUVResume.pdf.docx" download="Dhruv-Suthar-Resume.docx" class="sb-link" aria-label="Resume">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main" id="main-content">
+      <section class="sec" id="about">
+        <h2 class="sec-label">About</h2>
+        <div class="sec-body">
+          <p class="lead">
+            I like projects that have actual pressure on them - messy inputs, imperfect users, technical ambiguity, and outcomes that matter outside a demo.
           </p>
-          <ul class="detail-list">
-            <li>Implemented and evaluated AI-driven reconciliation analysis modules.</li>
-            <li>Contributed to requirement analysis, research, and product development for a pre-launch prototype.</li>
-            <li>Supported backend services, testing, debugging, and data processing workflows.</li>
-            <li>Collaborated with product and engineering teams to improve system accuracy and performance.</li>
-          </ul>
-        </article>
-      </section>
+          <p>
+            My work lives at the intersection of AI and product execution: moderation systems, legal intelligence, and simulation-driven tools. I move between interface work, backend logic, and AI experimentation without losing sight of usability.
+          </p>
+          <p>
+            Finishing B.Sc. Computer Science at Shree L. R. Tiwari Degree College, Mumbai. CGPA 7.8. Class of 2026.
+          </p>
+          <p>
+            If you're building something with real stakes, let's talk.
+          </p>
 
-      <!-- PROJECTS -->
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="section-kicker">// projects</p>
-          <h2>Selected work across AI safety, legal tech, and automation.</h2>
-        </div>
-        <div class="cards">
-
-          <article class="card project-card" data-accent="teal">
-            <div class="card-accent-line"></div>
-            <div class="card-topline">
-              <h3>TYPEAWARE</h3>
-              <span class="date-chip">Oct 2025</span>
-            </div>
-            <p class="project-subtitle">Real-Time AI Cyber Safety Platform</p>
-            <p>Real-time AI moderation detecting cyberbullying, abusive language, slang-based toxicity, and intentionally obfuscated harmful messages.</p>
-            <ul class="detail-list compact-list">
-              <li>Toxicity scoring and pattern-break detection.</li>
-              <li>Admin dashboard for moderation and reporting.</li>
-              <li>Prepared for demos, competitions, and live showcases.</li>
-            </ul>
-            <div class="stack-chips">
-              <span>FastAPI</span><span>React</span><span>OpenRouter AI</span><span>Tailwind</span><span>Vercel</span>
-            </div>
-          </article>
-
-          <article class="card project-card" data-accent="purple">
-            <div class="card-accent-line"></div>
-            <div class="card-topline">
-              <h3>LEGALYZE</h3>
-              <span class="date-chip">Mar 2026</span>
-            </div>
-            <p class="project-subtitle">AI-Powered Contract Intelligence</p>
-            <p>Contract intelligence platform using NLP and RAG for clause extraction, risk scoring, legal simplification, and AI-assisted contract generation.</p>
-            <ul class="detail-list compact-list">
-              <li>Low, medium, and high risk scoring for clauses.</li>
-              <li>Fair alternatives generated for risky or biased terms.</li>
-              <li>Digital signature verification for document authenticity.</li>
-            </ul>
-            <div class="stack-chips">
-              <span>React</span><span>MongoDB</span><span>Hugging Face</span><span>Tailwind</span>
-            </div>
-          </article>
-
-          <article class="card project-card" data-accent="blue">
-            <div class="card-accent-line"></div>
-            <div class="card-topline">
-              <h3>JURIX</h3>
-              <span class="date-chip">Oct 2025</span>
-            </div>
-            <p class="project-subtitle">AI Courtroom Simulation System</p>
-            <p>Educational courtroom simulation with AI agents for prosecution, defense, and judicial reasoning, supported by OCR and NLP-driven document understanding.</p>
-            <ul class="detail-list compact-list">
-              <li>Multi-agent behavior for courtroom roles.</li>
-              <li>OCR and NLP for parsing and summarizing legal documents.</li>
-              <li>AI-assisted legal argument generation and decision flow.</li>
-            </ul>
-            <div class="stack-chips">
-              <span>NLP</span><span>OCR</span><span>AI Agents</span><span>Python</span>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section class="section" id="education">
-        <div class="section-heading">
-          <p class="section-kicker">// education</p>
-          <h2>Academic foundation rooted in computer science.</h2>
-        </div>
-        <div class="education-list">
-          <article class="card compact-card edu-featured">
-            <div class="edu-icon">UG</div>
-            <h3>Shree L. R. Tiwari Degree College</h3>
-            <p class="edu-meta">Mumbai, Mira Road · 2023 – 2026</p>
-            <p>Bachelor of Science in Computer Science</p>
-            <span class="cgpa-badge">CGPA 7.8 / 10</span>
-          </article>
-          <article class="card compact-card">
-            <div class="edu-icon">JC</div>
-            <h3>Mother Mary Junior College</h3>
-            <p class="edu-meta">Mumbai, Bhayander · 2021 – 2023</p>
-            <p>Higher Secondary Education (Science)</p>
-          </article>
-          <article class="card compact-card">
-            <div class="edu-icon">HS</div>
-            <h3>Gurukul English High School</h3>
-            <p class="edu-meta">Mumbai, Bhayander · 2009 – 2021</p>
-            <p>Schooling</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- SKILLS & CERTS -->
-      <section class="section dual-section" id="skills">
-        <div class="card">
-          <p class="section-kicker">// skills</p>
-          <h2>Technical toolkit</h2>
-          <div class="chip-group">
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>Express</span>
-            <span>FastAPI</span>
-            <span>SQL</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>Vercel</span>
-            <span>Render</span>
-            <span>Postman</span>
-          </div>
-          <p class="language-line"><strong>Languages:</strong> English, Hindi</p>
-        </div>
-        <div class="card">
-          <p class="section-kicker">// certifications &amp; leadership</p>
-          <h2>Learning beyond coursework</h2>
-          <ul class="cert-list">
-            <li><span class="cert-dot"></span><div><strong>Python Programming</strong><span>GeeksforGeeks · Online</span></div></li>
-            <li><span class="cert-dot"></span><div><strong>Full Stack Development</strong><span>QUASTECH · Offline</span></div></li>
-            <li><span class="cert-dot"></span><div><strong>CS Department Representative</strong><span>CARPDIEM 2026 · All Area Access</span></div></li>
-            <li><span class="cert-dot"></span><div><strong>Core Committee Member</strong><span>TECHNOVA 2k25</span></div></li>
-            <li><span class="cert-dot"></span><div><strong>Technical Team Member</strong><span>Youth Festival 2024</span></div></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- ACTIVITIES -->
-      <section class="section" id="activities">
-        <div class="section-heading">
-          <p class="section-kicker">// activities</p>
-          <h2>Leadership and event experience.</h2>
-        </div>
-        <div class="cards">
-          <article class="card compact-card">
-            <div class="activity-num">01</div>
-            <h3>CARPDIEM 2026</h3>
-            <p class="activity-role">All Area Access · CS Department Representative</p>
-            <p>Contributed across multiple areas and helped the department win the <strong>Best PR Trophy</strong>.</p>
-          </article>
-          <article class="card compact-card">
-            <div class="activity-num">02</div>
-            <h3>TECHNOVA 2k25</h3>
-            <p class="activity-role">Core Committee Member</p>
-            <p>Coordinated 5+ technical events, managed logistics, and led execution as Event Head.</p>
-          </article>
-          <article class="card compact-card">
-            <div class="activity-num">03</div>
-            <h3>Youth Festival 2024</h3>
-            <p class="activity-role">Technical Team Member</p>
-            <p>Handled sound systems, stage setup, event operations, and technical coordination.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="section" id="contact">
-        <div class="contact-panel">
-          <p class="section-kicker">// contact</p>
-          <h2>Let's build something meaningful together.</h2>
-          <p>Open to internships, collaborations, and opportunities to contribute to strong teams, learn quickly, and build thoughtful AI or web products.</p>
-          <div class="contact-email">
-            <span class="email-label">reach me at</span>
-            <a href="mailto:dhruvrsuthar1978@gmail.com">dhruvrsuthar1978@gmail.com</a>
-          </div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:dhruvrsuthar1978@gmail.com?subject=Portfolio%20Contact">Send Email</a>
-            <a class="button button-secondary" href="#top">Back to Top</a>
+          <div class="pills">
+            <span>3+ Projects Shipped</span>
+            <span>1 Industry Internship</span>
+            <span>Class of 2026</span>
+            <span>CGPA 7.8 / 10</span>
           </div>
         </div>
       </section>
 
+      <section class="sec" id="experience">
+        <h2 class="sec-label">Experience</h2>
+        <div class="sec-body">
+          <div class="exp-card">
+            <header class="exp-hd">
+              <div>
+                <h3 class="exp-role">Product Development Intern</h3>
+                <span class="exp-co">NStechX India Private Limited</span>
+              </div>
+              <div class="exp-meta">
+                <span>Nov 2025 - Feb 2026</span>
+                <span class="dim">Hybrid | Mumbai</span>
+              </div>
+            </header>
+            <ul class="blist">
+              <li>Implemented AI-assisted reconciliation analysis modules for a pre-launch fintech platform.</li>
+              <li>Contributed to research, requirement shaping, and prototype development.</li>
+              <li>Supported backend services, testing flows, and data processing pipelines.</li>
+              <li>Collaborated across product and engineering to improve accuracy and reliability.</li>
+            </ul>
+            <div class="tags">
+              <span>FastAPI</span><span>Python</span><span>MongoDB</span><span>AI / ML</span><span>Node.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="projects">
+        <h2 class="sec-label">Projects</h2>
+        <div class="sec-body proj-list">
+          <article class="proj">
+            <div class="proj-hd">
+              <div class="proj-title-row">
+                <span class="proj-num">01</span>
+                <h3 class="proj-name">TypeAware</h3>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-yr">2025</span>
+                <a href="https://github.com/dhruvrsuthar1978/TypeAware-CycberBully.AI.git" target="_blank" rel="noopener" class="act-btn" aria-label="Source code">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+            <p class="proj-desc">Real-time AI cyber safety platform that detects cyberbullying, abusive language, slang toxicity, and obfuscated harmful messages before they escalate.</p>
+            <ul class="blist">
+              <li>Toxicity scoring with pattern-break detection for evasive language.</li>
+              <li>Moderation dashboard for reporting, review, and intervention.</li>
+            </ul>
+            <div class="tags"><span>FastAPI</span><span>React</span><span>OpenRouter AI</span><span>Tailwind</span><span>Vercel</span></div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-hd">
+              <div class="proj-title-row">
+                <span class="proj-num">02</span>
+                <h3 class="proj-name">Legalyze</h3>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-yr">2026</span>
+                <a href="https://github.com/dhruvrsuthar1978/Legalyze.git" target="_blank" rel="noopener" class="act-btn" aria-label="Source code">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+            <p class="proj-desc">AI-powered contract intelligence system using NLP and retrieval for clause extraction, legal simplification, risk scoring, and contract generation.</p>
+            <ul class="blist">
+              <li>Clause-level risk scoring across low, medium, and high severity.</li>
+              <li>Suggested fairer alternatives for risky wording and added digital signature checks.</li>
+            </ul>
+            <div class="tags"><span>React</span><span>MongoDB</span><span>Hugging Face</span><span>Tailwind</span></div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-hd">
+              <div class="proj-title-row">
+                <span class="proj-num">03</span>
+                <h3 class="proj-name">Jurix</h3>
+              </div>
+              <div class="proj-actions">
+                <span class="proj-yr">2025</span>
+                <a href="https://github.com/0Ankit0-0/Jurix.git" target="_blank" rel="noopener" class="act-btn" aria-label="Source code">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+            <p class="proj-desc">Group project built with my teammate for Aavishkar, designed as an educational courtroom simulation with AI-driven prosecution, defense, and judicial roles plus OCR and NLP-powered legal document understanding.</p>
+            <ul class="blist">
+              <li>Built collaboratively as a team project presented in Aavishkar.</li>
+              <li>Designed multi-agent courtroom roleplay across distinct legal roles.</li>
+              <li>Added AI-assisted argument generation, document parsing, and decision flow.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>NLP</span><span>OCR</span><span>AI Agents</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec" id="skills">
+        <h2 class="sec-label">Skills</h2>
+        <div class="sec-body">
+          <div class="skill-row">
+            <span class="skill-cat">Languages</span>
+            <div class="tags">
+              <span>JavaScript</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-cat">Frameworks</span>
+            <div class="tags">
+              <span>React</span><span>Node.js</span><span>Express</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-cat">AI and Data</span>
+            <div class="tags">
+              <span>OpenRouter AI</span><span>Hugging Face</span><span>NLP</span><span>OCR</span><span>MongoDB</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-cat">Tools</span>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>Vercel</span><span>Render</span><span>Postman</span>
+            </div>
+          </div>
+
+          <div class="edu-block">
+            <span class="skill-cat">Education</span>
+            <ul class="blist">
+              <li>B.Sc. Computer Science - Shree L. R. Tiwari Degree College, 2023-2026</li>
+              <li>CGPA 7.8 / 10</li>
+              <li>CS Department Representative, CARPDIEM 2026</li>
+              <li>Core Committee Member, TECHNOVA 2k25</li>
+              <li>Technical Team Member, Youth Festival 2024</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="contact">
+        <h2 class="sec-label">Contact</h2>
+        <div class="sec-body">
+          <div class="contact-panel">
+            <p>Open to internships, full-time roles, and strong teams where I can contribute across product, engineering, and AI implementation.</p>
+            <a href="mailto:dhruvrsuthar1978@gmail.com?subject=Portfolio%20Inquiry" class="email-link">
+              Open email conversation
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <p class="note">Usually responds within 48 hours.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Dhruv Suthar | Mumbai</span>
+        <span>2026 Portfolio</span>
+      </footer>
     </main>
-  </div><!-- end .page-shell -->
+  </div>
 
   <script src="script.js"></script>
 </body>

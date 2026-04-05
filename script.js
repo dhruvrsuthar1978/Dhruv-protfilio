@@ -1,124 +1,44 @@
-/* ============================================================
-   MOBILE MENU TOGGLE
-   ============================================================ */
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks   = document.querySelector(".nav-links");
+// ── Mobile sidebar ──
+const mobToggle = document.getElementById("mob-toggle");
+const sidebar   = document.getElementById("sidebar");
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-    });
+if (mobToggle && sidebar) {
+  mobToggle.addEventListener("click", () => {
+    const open = sidebar.classList.toggle("open");
+    mobToggle.classList.toggle("open", open);
+    mobToggle.setAttribute("aria-expanded", String(open));
   });
 }
 
-/* ============================================================
-   TYPING ANIMATION — hero role subtitle
-   ============================================================ */
-const phrases = [
-  "AI Developer · Full-Stack Engineer",
-  "Building Intelligent Products",
-  "MERN Stack · Python · FastAPI",
-  "Open to Internships · Mumbai 2026",
-];
-
-const typeTarget = document.getElementById("typeTarget");
-
-if (typeTarget) {
-  let phraseIdx  = 0;
-  let charIdx    = 0;
-  let deleting   = false;
-  let pauseTimer = null;
-
-  function type() {
-    const current = phrases[phraseIdx];
-
-    if (!deleting) {
-      charIdx++;
-      typeTarget.textContent = current.slice(0, charIdx);
-      if (charIdx === current.length) {
-        deleting = true;
-        pauseTimer = setTimeout(type, 2200);
-        return;
-      }
-      setTimeout(type, 48);
-    } else {
-      charIdx--;
-      typeTarget.textContent = current.slice(0, charIdx);
-      if (charIdx === 0) {
-        deleting   = false;
-        phraseIdx  = (phraseIdx + 1) % phrases.length;
-        setTimeout(type, 380);
-        return;
-      }
-      setTimeout(type, 22);
-    }
-  }
-
-  setTimeout(type, 800);
-}
-
-/* ============================================================
-   SCROLL REVEAL — sections
-   ============================================================ */
-const revealTargets = document.querySelectorAll(".section");
-
-const revealObs = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) { e.target.classList.add("is-visible"); revealObs.unobserve(e.target); }
-    });
-  },
-  { threshold: 0.10 }
-);
-
-revealTargets.forEach((el) => { el.classList.add("reveal"); revealObs.observe(el); });
-
-/* Staggered cards */
-const cardGroups = document.querySelectorAll(".cards, .education-list, .dual-section, .about-panels");
-
-const cardGroupObs = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        Array.from(e.target.children).forEach((child, i) => {
-          setTimeout(() => child.classList.add("is-visible"), i * 90);
-        });
-        cardGroupObs.unobserve(e.target);
-      }
-    });
-  },
-  { threshold: 0.07 }
-);
-
-cardGroups.forEach((g) => {
-  Array.from(g.children).forEach((c) => c.classList.add("reveal"));
-  cardGroupObs.observe(g);
+// ── Close sidebar when nav link clicked ──
+document.querySelectorAll(".nav-item").forEach((link) => {
+  link.addEventListener("click", () => {
+    sidebar?.classList.remove("open");
+    mobToggle?.classList.remove("open");
+    mobToggle?.setAttribute("aria-expanded", "false");
+  });
 });
 
-/* ============================================================
-   NAV ACTIVE HIGHLIGHT on scroll
-   ============================================================ */
-const sections   = document.querySelectorAll("section[id]");
-const navAnchors = document.querySelectorAll(".nav-links a");
+// ── Active nav on scroll ──
+const sections  = Array.from(document.querySelectorAll(".sec[id]"));
+const navItems  = Array.from(document.querySelectorAll(".nav-item"));
 
-const navObs = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        navAnchors.forEach((a) => {
-          a.style.color = "";
-          if (a.getAttribute("href") === "#" + e.target.id) a.style.color = "var(--accent)";
-        });
-      }
-    });
-  },
-  { threshold: 0.35 }
-);
+const setActive = (id) => {
+  navItems.forEach((el) => {
+    el.classList.toggle("is-active", el.dataset.section === id);
+  });
+};
 
-sections.forEach((s) => navObs.observe(s));
+if (sections.length && navItems.length) {
+  const obs = new IntersectionObserver(
+    (entries) => {
+      const hit = entries
+        .filter((e) => e.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (hit) setActive(hit.target.id);
+    },
+    { rootMargin: "-20% 0px -55% 0px", threshold: [0.15, 0.4, 0.65] }
+  );
+  sections.forEach((s) => obs.observe(s));
+  setActive(sections[0]?.id ?? "about");
+}
