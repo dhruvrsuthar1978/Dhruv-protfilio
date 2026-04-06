@@ -20,12 +20,22 @@
     </button>
   </div>
 
+  <div class="sb-backdrop" id="sb-backdrop"></div>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </div>
+
   <div class="layout">
 
     <aside class="sidebar" id="sidebar">
       <div class="sb-top">
         <div class="sb-id">
-          <div class="avatar">DS</div>
+          <div class="avatar">
+            <img src="WhatsApp Image 2026-04-06 at 7.17.00 PM.jpeg" alt="Dhruv Suthar portrait" class="avatar-img">
+          </div>
           <div class="sb-name-block">
             <h1 class="sb-name">Dhruv Suthar</h1>
             <p class="sb-title">AI Developer &amp; Engineer</p>
@@ -79,7 +89,25 @@
     </aside>
 
     <main class="main" id="main-content">
-      <section class="sec" id="about">
+      <section class="hero reveal" id="intro">
+        <div class="hero-mark" aria-hidden="true">
+          <span>DS</span>
+        </div>
+        <div class="hero-copy">
+          <p class="hero-kicker">Mumbai, India</p>
+          <h1 class="hero-title">Dhruv Suthar</h1>
+          <p class="hero-subtitle">AI Developer and Engineer building practical systems for real users and real constraints.</p>
+          <p class="hero-text">
+            I work across product thinking, backend systems, and AI features with a focus on clarity, reliability, and outcomes that matter beyond demos.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="hero-btn hero-btn-primary">View projects</a>
+            <a href="mailto:dhruvrsuthar1978@gmail.com?subject=Portfolio%20Inquiry" class="hero-btn">Let's talk</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec reveal" id="about">
         <h2 class="sec-label">About</h2>
         <div class="sec-body">
           <p class="lead">
@@ -104,7 +132,7 @@
         </div>
       </section>
 
-      <section class="sec" id="experience">
+      <section class="sec reveal" id="experience">
         <h2 class="sec-label">Experience</h2>
         <div class="sec-body">
           <div class="exp-card">
@@ -131,7 +159,7 @@
         </div>
       </section>
 
-      <section class="sec" id="projects">
+      <section class="sec reveal" id="projects">
         <h2 class="sec-label">Projects</h2>
         <div class="sec-body proj-list">
           <article class="proj">
@@ -203,7 +231,7 @@
         </div>
       </section>
 
-      <section class="sec" id="skills">
+      <section class="sec reveal" id="skills">
         <h2 class="sec-label">Skills</h2>
         <div class="sec-body">
           <div class="skill-row">
@@ -244,7 +272,7 @@
         </div>
       </section>
 
-      <section class="sec" id="contact">
+      <section class="sec reveal" id="contact">
         <h2 class="sec-label">Contact</h2>
         <div class="sec-body">
           <div class="contact-panel">
